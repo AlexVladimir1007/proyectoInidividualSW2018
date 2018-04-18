@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF27F9F9"
+    tools:context=".music">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="262dp"
+        android:layout_height="447dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/musica" />
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/my_music_list"
+        android:textColor="#ff0099cc"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnpause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btnplay"
+        android:layout_toEndOf="@+id/btnplay"
+        android:background="@drawable/btnpausemusic"
+        android:onClick="pause" />
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnpause"
+        android:layout_marginStart="73dp"
+        android:background="@drawable/btnstopmusic"
+        android:onClick="stop" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnstop"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="-164dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_toEndOf="@+id/btnpause"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnplay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toEndOf="@+id/btnstop"
+        android:background="@drawable/btnplaymusic"
+        android:onClick="play" />
+
+    <Button
+        android:id="@+id/btnforward"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btnpause"
+        android:layout_toEndOf="@+id/btnpause"
+        android:background="@drawable/btnforward"
+        android:onClick="forward" />
+
+</RelativeLayout>

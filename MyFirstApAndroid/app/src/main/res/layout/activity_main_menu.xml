@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF27F9F9"
+    tools:context=".MainMenu">
+
+    <Button
+        android:id="@+id/btnMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="255dp"
+        android:background="#778af1"
+        android:onClick="navegarmusica"
+        android:text="Music"
+        android:textColor="#ffffffff"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="263dp"
+        android:background="#778af1"
+        android:onClick="message"
+        android:text="History"
+        android:textColor="#ffffffff"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        app:srcCompat="@drawable/imagen2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Main Menu"
+        android:textColor="#ff0099cc"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="75dp" />
+</RelativeLayout>
